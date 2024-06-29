@@ -88,7 +88,6 @@ Widget menuItem(
       padding: const EdgeInsets.all(8.0),
       child: GestureDetector(
         onTap: () {
-          print(title);
           appProvider.shownPage = title;
           appProvider.notifyListeners();
           Navigator.pop(context);

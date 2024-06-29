@@ -17,7 +17,6 @@ class _TodoListState extends State<TodoList> {
   @override
   Widget build(BuildContext context) {
     AppProvider appProvider = Provider.of<AppProvider>(context, listen: false);
-    print(widget.todos);
     return (widget.todos.isEmpty)
         ? SizedBox(
             width: MediaQuery.of(context).size.width,
